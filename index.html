@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/weather.css">
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav__container">
+            <h1>Weather app</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel">
+            <h2>Weather App</h2>
+            <h3>Get your location's weather</h3>
+            <div class="form-group">
+                <input type="text" class="form-control" id="location" placeholder="">
+                <label for="location">Enter Location</label>
+            </div>
+            <!-- <button class="btn btn--large earth mb-3" type="submit">Get weather &#10140; </button> -->
+
+        </div>
+
+        <div class="panel weather__panel">
+            <div class="weather__panel-contentL">
+                <div class="map" id="map">
+                    <!-- <img src="img/sunny02.jpeg" alt="cloudy"> -->
+                </div>
+            </div>
+            <div class="weather__panel-contentR" id="weatherContent">
+                <!-- <div class="weather__info">
+                    <h1>Nairobi, Kenya</h1>
+                    <h2>Mostly Sunny</h2>
+                    <h2>79.8 F (26.6C)</h2>
+                </div>
+                <ul class="item_collection mt-3">
+                    <li class="item">Relative Humidity: 79%</li>
+                    <li class="item">Dewpoint: 73F (23C)</li>
+                    <li class="item">Feels like: 84F (29C)</li>
+                    <li class="item">Wind From the SSE at 6.0 MPH</li>
+                </ul>
+                <div class="btn-container">
+                    <button class="btn btn--large earth">Change location &#9676;</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/weather.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAZyh8vP3Kol3Jp0Zhf3tI_UCSpD3Plvc&libraries=places&callback=initAutocomplete"
+        async defer></script>
+
+</body>
+
+</html>
