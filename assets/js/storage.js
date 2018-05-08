@@ -1,7 +1,7 @@
 class Storage {
 	constructor() {
 		this.location;
-		this.defautLocation = 'Kisumu, Kenya';
+		this.defautLocation = 'Nairobi, Kenya';
 	}
 
 	getLocationData() {
